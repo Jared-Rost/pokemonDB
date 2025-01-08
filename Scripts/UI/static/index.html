@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokemon DB</title>
+</head>
+
+<body>
+    <!-- Loading animation -->
+    <div id="loading">
+        <div class="bouncer" style="animation-delay: 0s">
+           <div class="spinner" style="animation-delay: 0.05s"></div>
+        </div>
+        <div class="bouncer" style="animation-delay: 0.1s">
+           <div class="spinner" style="animation-delay: 0.15s"></div>
+        </div>
+        <div class="bouncer" style="animation-delay: 0.2s">
+           <div class="spinner" style="animation-delay: 0.25s"></div>
+        </div>
+        <div class="bouncer" style="animation-delay: 0.3s">
+           <div class="spinner" style="animation-delay: 0.35s"></div>
+        </div>
+     </div>
+     <!-- NavBar content -->
+    <button id="updateServerButton">Update Server</button>
+    <button id="getQueryListButton">Reload Query List</button>
+    <div id="text"></div>
+    <div class="dropdown" id="dropdown">
+        <button class="dropbtn">Queries</button>
+        <div class="drop-content" id="queries-list">
+            <div class="drop-option">test</div>
+        </div>
+    </div>
+    <!-- Form -->
+    <ul id="query-inputs"></ul>
+    <!-- Output -->
+    <div id="output">
+        <table id="table-output"></table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
